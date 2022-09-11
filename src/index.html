@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Semi+Condensed:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/images/favicon-32x32.png"
+    />
+    <link href="assets/styles/tailwind.css" rel="stylesheet" />
+    <title>Interactive rating component</title>
+  </head>
+  <body class="bg-[#141519]">
+    <!-- Global Container -->
+    <div class="container mx-auto grid place-content-center h-screen">
+      <!-- Card Container 1 -->
+      <div class="bg-[#1e252f] p-8 rounded-3xl space-y-4 max-w-sm" id="card1">
+        <!-- Star Image -->
+        <div
+          class="bg-darkBlue p-3 rounded-full h-[48px] w-[48px] flex items-center justify-center"
+        >
+          <img src="assets/images/icon-star.svg" alt="" />
+        </div>
+
+        <!-- Text Content -->
+        <div class="space-y-3">
+          <h1 class="text-white text-2xl font-extrabold">How did we do?</h1>
+          <p class="text-mediumGrey tracking-wide">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improving our offering!
+          </p>
+        </div>
+
+        <!-- 1-5 rating -->
+        <div
+          class="w-full font-[500] mt-[30px] flex justify-between text-[#959eac] py-4"
+        >
+          <div
+            id="rating1"
+            class="w-[47px] h-[47px] rounded-full bg-[#272e36] flex items-center justify-center hover:bg-[#fb7413] hover:text-white cursor-pointer"
+          >
+            1
+          </div>
+          <div
+            id="rating2"
+            class="w-[47px] h-[47px] rounded-full bg-[#272e36] flex items-center justify-center hover:bg-[#fb7413] hover:text-white cursor-pointer"
+          >
+            2
+          </div>
+          <div
+            id="rating3"
+            class="w-[47px] h-[47px] rounded-full bg-[#272e36] flex items-center justify-center hover:bg-[#fb7413] hover:text-white cursor-pointer"
+          >
+            3
+          </div>
+          <div
+            id="rating4"
+            class="w-[47px] h-[47px] rounded-full bg-[#272e36] flex items-center justify-center hover:bg-[#fb7413] hover:text-white cursor-pointer"
+          >
+            4
+          </div>
+          <div
+            id="rating5"
+            class="w-[47px] h-[47px] rounded-full bg-[#272e36] flex items-center justify-center hover:bg-[#fb7413] hover:text-white cursor-pointer"
+          >
+            5
+          </div>
+        </div>
+        <!-- submit button -->
+        <div>
+          <button
+            id="submit-btn"
+            class="bg-orange text-white py-2 uppercase w-full border border-black ring-black rounded-full tracking-widest"
+          >
+            submit
+          </button>
+        </div>
+      </div>
+
+      <!-- Card Container 2 -->
+      <div
+        id="card2"
+        class="hidden bg-[#1e252f] p-10 rounded-3xl space-y-8 max-w-sm mt-5 mx-auto"
+      >
+        <!-- Phone Image -->
+        <div>
+          <img
+            src="assets/images/illustration-thank-you.svg"
+            alt=""
+            class="mx-auto"
+          />
+        </div>
+
+        <!-- selection div -->
+        <div
+          class="text-orange bg-[#272e36] rounded-full px-4 py-1 text-sm mx-auto w-fit"
+        >
+          You selected <span class="num">1</span> out of 5
+        </div>
+
+        <!-- Text Content -->
+        <div class="space-y-3 text-center mx-auto">
+          <h1 class="text-white text-2xl font-extrabold">Thank you!</h1>
+          <p class="text-mediumGrey text-sm tracking-wide text-center">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, dont't hesitate to get in touch!
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Javascript Link -->
+    <script src="script.js"></script>
+  </body>
+</html>
