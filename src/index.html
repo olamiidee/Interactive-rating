@@ -44,32 +44,27 @@
           class="w-full font-[500] mt-[30px] flex justify-between text-[#959eac] py-4"
         >
           <div
-            id="rating1"
-            class="w-[47px] h-[47px] rounded-full bg-[#272e36] flex items-center justify-center hover:bg-[#fb7413] hover:text-white cursor-pointer"
+            class="w-[47px] h-[47px] rounded-full bg-[#272e36] flex items-center justify-center hover:bg-[#fb7413] hover:text-white cursor-pointer btn"
           >
             1
           </div>
           <div
-            id="rating2"
-            class="w-[47px] h-[47px] rounded-full bg-[#272e36] flex items-center justify-center hover:bg-[#fb7413] hover:text-white cursor-pointer"
+            class="w-[47px] h-[47px] rounded-full bg-[#272e36] flex items-center justify-center hover:bg-[#fb7413] hover:text-white cursor-pointer btn"
           >
             2
           </div>
           <div
-            id="rating3"
-            class="w-[47px] h-[47px] rounded-full bg-[#272e36] flex items-center justify-center hover:bg-[#fb7413] hover:text-white cursor-pointer"
+            class="w-[47px] h-[47px] rounded-full bg-[#272e36] flex items-center justify-center hover:bg-[#fb7413] hover:text-white cursor-pointer btn"
           >
             3
           </div>
           <div
-            id="rating4"
-            class="w-[47px] h-[47px] rounded-full bg-[#272e36] flex items-center justify-center hover:bg-[#fb7413] hover:text-white cursor-pointer"
+            class="w-[47px] h-[47px] rounded-full bg-[#272e36] flex items-center justify-center hover:bg-[#fb7413] hover:text-white cursor-pointer btn"
           >
             4
           </div>
           <div
-            id="rating5"
-            class="w-[47px] h-[47px] rounded-full bg-[#272e36] flex items-center justify-center hover:bg-[#fb7413] hover:text-white cursor-pointer"
+            class="w-[47px] h-[47px] rounded-full bg-[#272e36] flex items-center justify-center hover:bg-[#fb7413] hover:text-white cursor-pointer btn"
           >
             5
           </div>
@@ -100,11 +95,11 @@
         </div>
 
         <!-- selection div -->
-        <div
-          class="text-orange bg-[#272e36] rounded-full px-4 py-1 text-sm mx-auto w-fit"
+        <p
+          class="text-orange bg-[#272e36] rounded-full px-4 py-1 text-xs mx-auto w-fit"
         >
-          You selected <span class="num">1</span> out of 5
-        </div>
+          You selected <span id="rating">0</span> out of 5
+        </p>
 
         <!-- Text Content -->
         <div class="space-y-3 text-center mx-auto">
@@ -113,6 +108,16 @@
             We appreciate you taking the time to give a rating. If you ever need
             more support, dont't hesitate to get in touch!
           </p>
+        </div>
+
+        <!-- submit button -->
+        <div>
+          <button
+            id="rate-btn"
+            class="bg-orange text-white py-2 uppercase w-full border border-black ring-black rounded-full tracking-wider"
+          >
+            Rate Again
+          </button>
         </div>
       </div>
     </div>
